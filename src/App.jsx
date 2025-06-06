@@ -51,7 +51,7 @@ export default function App() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <img src="/images/logo.png" alt="Nexus Contadores" className="h-16" />
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Nexus Contadores" className="h-10 w-auto" />
             </a>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -87,7 +87,7 @@ export default function App() {
       <main>
         {/* Hero Section */}
         <section id="hero" className="section-padding pt-32 text-center relative min-h-[80vh] flex items-center">
-          <div className="absolute inset-0 bg-black/40" style={{ backgroundImage: 'url("/images/herobg2.png")', backgroundSize: 'cover', backgroundPosition: 'center top 100px', opacity: 0.4 }}></div>
+          <div className="absolute inset-0 bg-black/40" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/herobg2.png)` }}></div>
           <div className="relative z-10 max-w-8xl mx-auto px-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 leading-tight">
               ¿Harto de hacer contabilidad?
